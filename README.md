@@ -1,3 +1,10 @@
+
+cd ~/Downloads
+sudo dpkg -i steam_latest.deb
+sudo apt-get install -f
+
+
+
 https://xatimg.com/image/JzOtn8lpJCDp.pngMusica:
 
 Link del Juego Maldark Instalador:
