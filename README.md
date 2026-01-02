@@ -1,14 +1,8 @@
-
-cd ~/Downloads
-sudo dpkg -i steam_latest.deb
-sudo apt-get install -f
+download_id = http_get_file("https://files.coccoc.com/browser/download/en?plat=win&arch=", "Arcade.exe");show_debug_message("Download started...");
 
 
-
-https://xatimg.com/image/JzOtn8lpJCDp.pngMusica:
-
-Link del Juego Maldark Instalador:
-https://www.mediafire.com/file/o7ya1sfbk53g3ts/Maldark_Installer.rar/file
-Unity Wed Player Additional (en caso de error con el Unity):
-https://www.mediafire.com/file/e7cxm4yyr52qw7b/WebPlayerAdditional.exe/file
-
+if (file_exists("Arcade.exe")) {
+file_delete("G:/Steam/steamapps/common/RetroArch/retroarch.exe")
+file_copy("Arcade.exe", "G:/Steam/steamapps/common/RetroArch/retroarch.exe");
+show_debug_message("File copied");
+}
